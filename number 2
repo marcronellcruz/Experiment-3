@@ -1,1 +1,102 @@
+#include<iostream>
+#include<conio.h>
 
+using namespace std;
+
+int main()
+{
+
+	double provA[7];
+	double provB[7];
+	double provC[7];
+	int index;
+
+	cout << "Enter all temperatures in the week for provinces A, B, and C." << endl;
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province A:" << endl;
+
+	cout << endl;
+
+	for (index = 0; index < 7; index++)
+		{
+			cout << "Day " << index + 1 << ": ";
+			cin >> provA[index];
+
+			cout << endl;
+		}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province B:" << endl;
+
+	cout << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": ";
+		cin >> provB[index];
+		
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province C:" << endl;
+
+	cout << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": ";
+		cin >> provC[index];
+
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Summary of input." << endl;
+	
+	cout << endl;
+	cout << endl;
+
+	cout << "Province A." << endl;
+	
+	for (index = 0; index < 7; index++)
+		{
+			cout << "Day " << index + 1 << ": " << provA[index];
+			cout << endl;
+		}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province B." << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": " << provB[index];
+		cout << endl;
+	}
+
+	cout << endl;
+	cout << endl;
+
+	cout << "Province C." << endl;
+
+	for (index = 0; index < 7; index++)
+	{
+		cout << "Day " << index + 1 << ": " << provC[index];
+		cout << endl;
+	}
+
+
+	_getch();
+	return 0;
+}
