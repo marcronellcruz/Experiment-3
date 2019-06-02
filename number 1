@@ -1,1 +1,61 @@
+#include<iostream>
+#include<conio.h>
 
+using namespace std;
+
+int main()
+{
+	double number[10];
+	int index;
+	double sum = 0;
+	int max = 0;
+
+	cout << "Provide 10 integral numbers." << endl;
+
+	cout << endl;
+	cout << endl;
+
+	for (index = 0; index < 10; index++)
+		number[index] = 0.0;
+
+	for (index = 0; index < 10; index++)
+		cin >> number[index];
+
+	for (index = 0; index < 10; index++)
+		sum = sum + number[index];
+
+	cout << endl;
+	cout << endl;
+
+	cout << "The sum is: " << sum << endl;
+	cout << "The average is: " << sum/10 << endl;
+
+	for (index = 0;index < 10; index++)
+		{
+		if (max > number[index])
+			max = max;
+		else if (max < number[index])
+			max = number[index];
+		else
+			max = max;
+		}
+	cout << "The largest number is: " << max << endl;
+
+	for (index = 1; index < 10; index++)
+	{
+		if (number[0] > number[index])
+			number[0] = number[index];
+
+		else if (number[0] < number[index])
+			number[0] = number[0];
+			
+		else
+			number[0] = number[index];
+			number[0] = number[0];
+	}
+	cout << "The smallest number is: " << number[0] << endl;
+
+	_getch();
+	return 0;
+
+}
